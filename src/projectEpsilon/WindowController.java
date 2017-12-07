@@ -1,6 +1,15 @@
 package projectEpsilon;
+
 import javax.swing.*;
+
+import java.awt.TextComponent;
+import java.awt.TextField;
 import java.awt.event.*;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.awt.*; 
+
+
 /** Used to generate various windows for main.java (gradebook)
  *  Arguments should be in the form (Int x, Int y, String title, String caste) h
  *  
@@ -9,7 +18,8 @@ import java.awt.event.*;
  * @param title title of generated window
  * @param caste Used to determine what to generate inside window (Valid strings: "MENU", "APPLICATION"(not yet), "CONFIG")
  */
-public class WindowController extends JFrame {
+public class WindowController extends JFrame 
+{
 	
 	private JPanel menuPanel;
 	private JLabel menuLabel;
@@ -22,109 +32,237 @@ public class WindowController extends JFrame {
 	private JTextField configFieldStudents;
 	private JTextField configFieldHomework;
 	private JButton configButtonContinue;
+	private JLabel configLabelAmountOfStudents;
+	private JLabel configLabelAmountOfHomework;
+	
 	
 	private JPanel gradePanel;
 	
 	private int students = 0;
 	private int assignments = 0;
 	
+	//Variables declared
+	String amountOfStudents = null;
+	String amountOfHomework = null;
+	int amountOfStudentsInt= 0;
+	int amountOfHomeworkInt = 0;
+	
 	
 	//Makes different windows depending on what is given to it
-	public WindowController(int x, int y, String title, String caste){
+	public WindowController(int x, int y, String title, String caste) 
+	{
 		int WINDOW_HEIGHT = y;
 		int WINDOW_WIDTH = x;
 		setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
 		setTitle(title);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		if(caste.equals("MENU")){
+		if(caste.equals("MENU"))
+		{
 			buildMenu();
 			add(menuPanel);
-		}else if(caste.equals("CONFIG")){
-			buildConfig();
-			add(configPanel);
-		}else if(caste.equals("APPLICATION")) {
-			System.out.println("Error: Attempted to create an application window without student/assignment values.");
-		}else {
-			System.out.println("Unrecognized window caste");
 		}
+			else if(caste.equals("CONFIG"))
+			{
+				buildConfig();
+				add(configPanel);
+			}
+				else if(caste.equals("APPLICATION")) 
+				{
+					System.out.println("Error: Attempted to create an application window without student/assignment values.");
+				}
+			else 
+			{
+				System.out.println("Unrecognized window caste");
+			}
+		
+		//Set visible 
 		setVisible(true);
 	}
-		
-	public WindowController(int x, int y, String title, String caste, int students, int assignments) {
-		int WINDOW_HEIGHT = y;
-		int WINDOW_WIDTH = x;
-		setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
-		setTitle(title);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		if(caste.equals("APPLICATION")) {
-			buildApplication(students, assignments);
-			add(gradePanel);
-		}
-	}
-	
-		
-		
-	
+    
 	//Creates the main menu window
-	private void buildMenu(){
+	private void buildMenu()
+	{
 		menuLabel = new JLabel("Welcome to Grade Book 1996.");
 		menuButtonNew = new JButton("New Gradebook");
+		
 		//Makes the new button work
-		menuButtonNew.addActionListener(new MenuButtonNewListener());
+		menuButtonNew.addActionListener(new MenuButtonListener());
 		menuButtonLoad = new JButton("Load Gradebook");
 		menuPanel = new JPanel();
+		
+		//Added labels
 		menuPanel.add(menuLabel);
 		menuPanel.add(menuButtonNew);
 		menuPanel.add(menuButtonLoad);
 	}
-	//Generates the config window when the NEW button is pressed.
-	private class MenuButtonNewListener implements ActionListener{
-		public void actionPerformed(ActionEvent e){
-			WindowController Config = new WindowController(300, 300, "Configuration", "CONFIG");
+	
+	private void buildApplication(int students, int assignments) 
+	{ 
+		{ 
+			//An array of buttons 
+			JButton[] Buttons = new JButton[students * (assignments + 5)];
 			
+			//Variables declared as
+			int n = 0;
+			int i = 0;
+			
+			//Computation 
+			n = (students * (assignments + 5));
+			
+			while(i < n) 
+			{
+				Buttons[i] = new JButton("");
+			}
+			
+			gradePanel = new JPanel();
+			
+			//Redeclared I as 0 
+			i = 0;
+			
+			while(i < n) 
+			{
+				gradePanel.add(Buttons[i]);
+			}
 		}
 	}
 	
 	
-	
-	//Creates the configuration page, should be activated by the "new" button on the menu window
-	private void buildConfig(){
-		String[] studentAmount = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"};
-		String[] assignmentAmount = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"};
-		configLabelStudents = new JLabel("How many students are in this class?");
-		JTextField configFieldStudents = new JTextField();
-		configLabelHomework = new JLabel("How many assignments are due this semester?");
-		JTextField configFieldHomework = new JTextField();
-		configButtonContinue = new JButton("Continue");
-		configPanel = new JPanel();
-		configPanel.add(configLabelStudents);
-		configPanel.add(configFieldStudents);
-		configPanel.add(configLabelHomework);
-		configPanel.add(configFieldHomework);
-		configPanel.add(configButtonContinue);
+	//Generates the config window when the NEW button is pressed.
+		private class MenuButtonListener implements ActionListener
+		{
+			public void actionPerformed(ActionEvent e)
+			{		
+				WindowController MenuButton = new WindowController(700, 75, "Configuration", "CONFIG");
+			}
+		}
 		
-	}
+		//Creates the configuration page, should be activated by the "new" button on the menu window
+		private void buildConfig() 
+		{
+			//SCanner class
+			Scanner input = new Scanner(System.in);
+			
+			//Panel 
+			configPanel = new JPanel();
+			configPanel.setLayout(new FlowLayout(FlowLayout.LEFT)); // change from 'centered'
+			
+			//Labels
+			configLabelStudents = new JLabel("How many students are in this class?");
+			configLabelHomework = new JLabel("How many assignments are due this semester?");
+			configLabelAmountOfStudents = new JLabel();
+			configLabelAmountOfHomework = new JLabel();
+			
+			//Buttons
+			configButtonContinue = new JButton("Continue");
+			
+			//Field
+			TextField textFieldStudents = new TextField(1); // Declare and allocate an TextField instance called tfInput
+			textFieldStudents.setEditable(true);
+			
+			TextField textFieldHomework = new TextField(1); // Declare and allocate an TextField instance called tfInput
+			textFieldHomework.setEditable(true);
+			
+			//Textfield for students
+			configPanel.add(configLabelStudents);
+			configPanel.add(textFieldStudents);
+			configPanel.add(configLabelAmountOfStudents);
+			textFieldStudents.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent e)
+				{
+					amountOfStudents = textFieldStudents.getText();
+					System.out.print(amountOfStudents);
+					configLabelAmountOfStudents.setText(amountOfStudents);
+					amountOfStudentsInt = Integer.valueOf(amountOfStudents);
+				}
+			});
+		       
+		    //Textfield for homework
+			configPanel.add(configLabelHomework);
+			configPanel.add(textFieldHomework);
+			configPanel.add(configLabelAmountOfHomework);
+			textFieldHomework.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent e)
+				{
+					amountOfHomework = textFieldHomework.getText();
+					System.out.print(amountOfHomework);
+					configLabelAmountOfHomework.setText(amountOfHomework);
+					amountOfHomeworkInt = Integer.valueOf(amountOfHomework);					
+				}
+			});
+			
+			//Continue button
+			configPanel.add(configButtonContinue);
+			configButtonContinue.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent e)
+				{
+		            	configPanel.setVisible(false);
+		            	dispose();
+				}
+			});
+			
+			//Label Locations
+			configLabelAmountOfStudents.setLocation(20, 150);
+			configLabelAmountOfHomework.setLocation(90, 150);
+			
+			//Creating Arrays
+			Student[] arrayOfStudents = new Student[amountOfStudentsInt];
+			String[] arrayOfHomework = new String[amountOfHomeworkInt];
+			
+			//Add Students Name, Lab Grade, Mid Term Exam, Essay Grade, Homework
+			
+			/**
+			for(int i = arrayOfStudents.length; i > 0; i--)
+			 {
+				//Sets up which student in the array to work with
+				while(amountOfStudents.length() >= 0)
+				{	
+					//Localized variable
+					String temp;
+					//Sets the student's name
+					System.out.println("");
+					System.out.println("Input student name:");
+					System.out.print("> ");
+					temp = input.next();
 	
-	private class ConfigButtonContinueListener implements ActionListener{
-		public void actionPerformed(ActionEvent e) {
-			students = Integer.parseInt(configFieldStudents);
-			WindowController Application = new WindowController(800, 600, "Gradebook 1992", "APPLICATION", students, assignments);
-		}
+					
+					//Sets the student's lab grade
+					System.out.println("");
+					System.out.println("Input the student's grade on their lab assignment.");
+					System.out.print("> ");
+					input = keyboard.next();
+					i = Integer.parseInt(input);
+					student[studentInt].setLabGrade(i);
+					
+					//Determines if the student passes their midterm exam
+					System.out.println("");
+					System.out.println("Input the student's grade on their midterm exam.");
+					System.out.print("> ");
+					input = keyboard.next();
+					i = Integer.parseInt(input);
+					student[studentInt].setExamGrade(i);
+					
+					//Sets the student's essay grade
+					System.out.println("");
+					System.out.println("Input the student's essay grade.");
+					System.out.print("> ");
+					input = keyboard.next();
+					i = Integer.parseInt(input);
+					student[studentInt].setEssayGrade(i);
+					
+					//Sets the student's grade on their final
+					System.out.println("");
+					System.out.println("Input the student's grade on their final exam.");
+					System.out.print("> ");
+					input = keyboard.next();
+					i = Integer.parseInt(input);
+					student[studentInt].setFinalGrade(i);
+					
 		
-	}
-	
-	private void buildApplication(int students, int assignments) { 
-		JButton[] Buttons = new JButton[students * (assignments + 5)];
-		int n = 0;
-		int i = 0;
-		n = (students * (assignments + 5));
-		while(i < n) {
-			Buttons[i] = new JButton("");
-		}
-		gradePanel = new JPanel();
-		i = 0;
-		while(i < n) {
-			gradePanel.add(Buttons[i]);
-		}
-	}
+				}
+			 }
+			 */
+}
 }

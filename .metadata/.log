@@ -161,3 +161,273 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.core.net 1 0 2017-12-06 20:00:32.364
 !MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-06 20:17:01.394
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-06 20:17:01.476
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 20:56:04.565
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 20:56:05.315
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 21:26:05.528
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 21:26:05.572
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 21:56:05.652
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 21:56:05.658
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 22:07:11.667
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 22:07:11.675
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+!SESSION 2017-12-06 22:07:11.560 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-06 22:07:36.804
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\arola'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 22:07:44.241
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 22:07:44.253
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-06 22:07:45.074
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-06 22:07:45.113
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 22:07:49.197
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 22:07:49.204
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 22:08:45.013
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 22:08:45.022
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 22:38:45.111
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 22:38:45.424
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 23:08:47.262
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 23:08:47.774
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 23:38:50.412
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 23:38:50.744
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 00:08:51.117
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 00:08:51.137
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 00:38:51.217
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 00:38:51.243
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 01:08:51.324
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 01:08:51.492
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 09:04:53.556
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 09:04:53.806
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 09:34:54.719
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 09:34:54.759
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 10:04:54.798
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 10:04:54.803
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 10:34:54.889
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 10:34:54.895
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:04:54.929
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:04:54.935
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:34:55.112
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:34:55.133
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:41:51.783
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:41:51.814
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+!SESSION 2017-12-07 11:41:51.342 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-07 11:42:54.682
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\arola'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:43:04.677
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:43:04.731
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:43:06.682
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:43:06.706
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-07 11:43:19.577
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-07 11:43:19.614
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:44:06.508
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 11:44:06.531
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 12:14:06.613
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 12:14:06.791
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 12:44:06.882
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 12:44:06.888
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 13:14:06.969
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 13:14:06.976
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 13:44:07.014
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 13:44:07.021
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 14:09:22.661
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 14:09:22.686
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+!SESSION 2017-12-07 14:09:22.552 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-07 14:09:41.882
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\arola'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 14:09:44.998
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 14:09:45.044
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 14:09:47.797
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 14:09:47.802
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 14:10:46.141
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 14:10:46.187
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-07 14:12:05.939
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-12-07 14:12:05.963
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 14:40:46.243
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 14:40:46.294
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 15:10:46.383
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 15:10:46.432
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 15:40:46.523
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-07 15:40:46.534
+!MESSAGE System property http.proxyPort is not set but should be 56260.
