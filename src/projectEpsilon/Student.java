@@ -17,6 +17,7 @@ public class Student {
 	homeworkGrades = new int[n];
 	}
 	
+	
 	/** The setName method takes a string and sets it as the student's name.
 	 * 
 	 * @param str String to set the student's name as
@@ -25,12 +26,20 @@ public class Student {
 		Name = str;
 	}
 	
+	public String getName() {
+		return Name;
+	}
+	
 	/** The setLabGrade method sets the student's grade for their lab project
 	 * 
 	 * @param n is the integer grade for their lab project
 	 */
 	public void setLabGrade(int n){
 		labGrade = n;
+	}
+	
+	public int setLabGrade() {
+		return labGrade;
 	}
 	
 	/** The setExamGrade method takes the student's exam grade, and if it is 70 or above they pass, or else they fail.
@@ -45,12 +54,29 @@ public class Student {
 		}
 	}
 	
+	public String getExamGrade() {
+		String Passed = "Passed";
+		String Failed = "Failed";
+		String Dunno = "Dunno";
+		if(examPass == true) {
+			return Passed;
+		}else if(examPass == false) {
+			return Failed;
+		}else {
+			return Dunno;
+		}
+	}
+	
 	/** The setEssayGrade method sets the student's essay grade
 	 * 
 	 * @param n integer the student's essay grade should be set to
 	 */
 	public void setEssayGrade(int n){
 		essayGrade = n;
+	}
+	
+	public int getEssayGrade() {
+		return essayGrade;
 	}
 	
 	/** The setFinalGrade method sets the student's grade on their final exam.
@@ -61,6 +87,10 @@ public class Student {
 		finalGrade = n;
 	}
 	
+	public int getFinalGrade() {
+		return finalGrade;
+	}
+	
 	/** The setHomeworkGrade method allows you to set a given homework assignment's grade
 	 * 
 	 * @param grade is the grade for the given homework assignment
@@ -68,6 +98,10 @@ public class Student {
 	 */
 	public void setHomeworkGrade(int grade, int position){
 		homeworkGrades[position] = grade;
+	}
+	
+	public int getHomeworkGrade(int position) {
+		return homeworkGrades[position];
 	}
 	
 	/** The getTestValues method outputs all grade information regarding a student, useful for testing
