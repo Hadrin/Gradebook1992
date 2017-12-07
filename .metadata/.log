@@ -1,0 +1,163 @@
+!SESSION 2017-12-06 19:51:40.101 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -data C:\Users\arola\OneDrive\Documents\GitHub\Gradebook1992 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.ui 2 0 2017-12-06 19:51:59.343
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-12-06 19:51:59.343
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-12-06 19:52:02.269
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-12-06 19:52:02.328
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-06 19:52:11.939
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\arola'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:52:15.963
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:52:16.023
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:52:19.122
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:52:19.133
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:53:18.176
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:53:18.184
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2017-12-06 19:54:08.748
+!MESSAGE Failed to load properties file for project 'src'
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:54:47.479
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:54:47.509
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+!SESSION 2017-12-06 19:54:52.961 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-06 19:55:41.367
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\arola'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:55:42.666
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:55:43.076
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:55:47.470
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:55:47.483
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:55:54.616
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:55:54.621
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+!SESSION 2017-12-06 19:56:10.430 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-06 19:56:26.257
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\arola'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:56:29.961
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:56:30.543
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:56:32.605
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:56:32.617
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:57:31.624
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:57:31.634
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-12-06 19:58:05.497
+!MESSAGE DevStyle theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-12-06 19:58:05.787
+!MESSAGE DevStyle is restoring colors that were configured prior to DevStyle being enabled
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:59:01.523
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:59:01.529
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+!SESSION 2017-12-06 19:59:05.550 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY com.genuitec.eclipse.theming.core 1 0 2017-12-06 19:59:18.170
+!MESSAGE DevStyle has detected SWT theming property is disabled, we will enable for you as it's required for DevStyle to work properly
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-06 19:59:27.923
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\arola'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:59:30.402
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:59:30.503
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:59:33.693
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 19:59:33.700
+!MESSAGE System property http.proxyPort is not set but should be 56260.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 20:00:32.358
+!MESSAGE System property http.proxyHost is not set but should be 127.0.0.1.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-06 20:00:32.364
+!MESSAGE System property http.proxyPort is not set but should be 56260.

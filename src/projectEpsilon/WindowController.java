@@ -2,7 +2,7 @@ package projectEpsilon;
 import javax.swing.*;
 import java.awt.event.*;
 /** Used to generate various windows for main.java (gradebook)
- *  Arguments should be in the form (Int x, Int y, String title, String caste)
+ *  Arguments should be in the form (Int x, Int y, String title, String caste) h
  *  
  * @param x width of desired window in pixels
  * @param y height of desired window in pixels
