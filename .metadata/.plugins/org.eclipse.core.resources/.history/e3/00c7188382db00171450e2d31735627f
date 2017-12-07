@@ -1,0 +1,196 @@
+package projectEpsilon;
+
+import javax.swing.*;
+
+import java.awt.TextComponent;
+import java.awt.TextField;
+import java.awt.event.*;
+import java.awt.*; 
+
+
+/** Used to generate various windows for main.java (gradebook)
+ *  Arguments should be in the form (Int x, Int y, String title, String caste) h
+ *  
+ * @param x width of desired window in pixels
+ * @param y height of desired window in pixels
+ * @param title title of generated window
+ * @param caste Used to determine what to generate inside window (Valid strings: "MENU", "APPLICATION"(not yet), "CONFIG")
+ */
+public class WindowController extends JFrame 
+{
+	
+	private JPanel menuPanel;
+	private JLabel menuLabel;
+	private JButton menuButtonNew;
+	private JButton menuButtonLoad;
+	
+	private JPanel configPanel;
+	private JLabel configLabelStudents;
+	private JLabel configLabelHomework;
+	private JTextField configFieldStudents;
+	private JTextField configFieldHomework;
+	private JButton configButtonContinue;
+	private JLabel configLabelAmountOfStudents;
+	private JLabel configLabelAmountOfHomework;
+	
+	
+	private JPanel gradePanel;
+	
+	private int students = 0;
+	private int assignments = 0;
+	
+	//Variables declared
+	String amountOfStudents = null;
+	String amountOfHomework = null;
+	
+	
+	//Makes different windows depending on what is given to it
+	public WindowController(int x, int y, String title, String caste) 
+	{
+		int WINDOW_HEIGHT = y;
+		int WINDOW_WIDTH = x;
+		setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+		setTitle(title);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		if(caste.equals("MENU"))
+		{
+			buildMenu();
+			add(menuPanel);
+		}
+			else if(caste.equals("CONFIG"))
+			{
+				buildConfig();
+				add(configPanel);
+			}
+				else if(caste.equals("APPLICATION")) 
+				{
+					System.out.println("Error: Attempted to create an application window without student/assignment values.");
+				}
+			else 
+			{
+				System.out.println("Unrecognized window caste");
+			}
+		
+		//Set visible 
+		setVisible(true);
+	}
+    
+	//Creates the main menu window
+	private void buildMenu()
+	{
+		menuLabel = new JLabel("Welcome to Grade Book 1996.");
+		menuButtonNew = new JButton("New Gradebook");
+		
+		//Makes the new button work
+		menuButtonNew.addActionListener(new MenuButtonListener());
+		menuButtonLoad = new JButton("Load Gradebook");
+		menuPanel = new JPanel();
+		
+		//Added labels
+		menuPanel.add(menuLabel);
+		menuPanel.add(menuButtonNew);
+		menuPanel.add(menuButtonLoad);
+	}
+	
+	private void buildApplication(int students, int assignments) 
+	{ 
+		{ 
+			//An array of buttons 
+			JButton[] Buttons = new JButton[students * (assignments + 5)];
+			
+			//Variables declared as
+			int n = 0;
+			int i = 0;
+			
+			//Computation 
+			n = (students * (assignments + 5));
+			
+			while(i < n) 
+			{
+				Buttons[i] = new JButton("");
+			}
+			
+			gradePanel = new JPanel();
+			
+			//Redeclared I as 0 
+			i = 0;
+			
+			while(i < n) 
+			{
+				gradePanel.add(Buttons[i]);
+			}
+		}
+	}
+	
+	
+	//Generates the config window when the NEW button is pressed.
+		private class MenuButtonListener implements ActionListener
+		{
+			public void actionPerformed(ActionEvent e)
+			{		
+				WindowController MenuButton = new WindowController(700, 200, "Configuration", "CONFIG");
+			}
+		}
+		
+		//Creates the configuration page, should be activated by the "new" button on the menu window
+		private void buildConfig() 
+		{
+			//Construct Arrays
+			//Array to contruct the amount of students and assingments
+			String[] studentAmount;
+			String[] assignmentAmount;
+					
+			//Panel 
+			configPanel = new JPanel();
+			
+			//Labels
+			configLabelStudents = new JLabel("How many students are in this class?");
+			configLabelHomework = new JLabel("How many assignments are due this semester?");
+			configLabelAmountOfStudents = new JLabel();
+			configLabelAmountOfHomework = new JLabel();
+			
+			//Buttons
+			configButtonContinue = new JButton("Continue");
+			
+			//Field
+			TextField textFieldStudents = new TextField(1); // Declare and allocate an TextField instance called tfInput
+			textFieldStudents.setEditable(true);
+			
+			TextField textFieldHomework = new TextField(1); // Declare and allocate an TextField instance called tfInput
+			textFieldHomework.setEditable(true);
+			
+			//Textfield for students
+			configPanel.add(configLabelStudents);
+			configPanel.add(textFieldStudents);
+			textFieldStudents.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent e)
+				{
+					amountOfStudents = textFieldStudents.getText();
+					System.out.print(amountOfStudents);
+					configLabelAmountOfStudents.setText(amountOfStudents);
+					
+				}
+			});
+		       
+		    //Textfield for homework
+			configPanel.add(configLabelHomework);
+			configPanel.add(textFieldHomework);
+			textFieldHomework.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent e)
+				{
+					amountOfHomework = textFieldHomework.getText();
+					System.out.print(amountOfHomework);
+					configLabelAmountOfHomework.setText(amountOfStudents);
+					
+				}
+			});
+			
+			//Continue button
+			configPanel.add(configButtonContinue);
+			
+			System.out.println(amountOfStudents);
+			System.out.print(amountOfHomework);
+		}
+}

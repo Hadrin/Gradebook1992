@@ -13,8 +13,9 @@ public class Student {
 	 *
 	 * @param n integer number of homework assignments
 	 */
-	public void setHomeworkAmount(int n){
-	homeworkGrades = new int[n];
+	public void setHomeworkAmount(int n)
+	{
+		homeworkGrades = new int[n];
 	}
 	
 	
@@ -22,11 +23,13 @@ public class Student {
 	 * 
 	 * @param str String to set the student's name as
 	 */
-	public void setName(String str){
+	public void setName(String str)
+	{
 		Name = str;
 	}
 	
-	public String getName() {
+	public String getName() 
+	{
 		return Name;
 	}
 	
@@ -34,11 +37,13 @@ public class Student {
 	 * 
 	 * @param n is the integer grade for their lab project
 	 */
-	public void setLabGrade(int n){
+	public void setLabGrade(int n)
+	{
 		labGrade = n;
 	}
 	
-	public int setLabGrade() {
+	public int setLabGrade() 
+	{
 		return labGrade;
 	}
 	
@@ -46,23 +51,33 @@ public class Student {
 	 * 
 	 * @param n integer representing student's grade 
 	 */
-	public void setExamGrade(int n){
-		if(n < 70){
+	public void setExamGrade(int n)
+	{
+		if(n < 70)
+		{
 			examPass = false;
-		}else{
+		}
+		else
+		{
 			examPass = true;
 		}
 	}
 	
-	public String getExamGrade() {
+	public String getExamGrade() 
+	{
 		String Passed = "Passed";
 		String Failed = "Failed";
 		String Dunno = "Dunno";
-		if(examPass == true) {
+		if(examPass == true) 
+		{
 			return Passed;
-		}else if(examPass == false) {
-			return Failed;
-		}else {
+		}
+			else if(examPass == false) 
+			{
+				return Failed;
+			}
+		else 
+		{
 			return Dunno;
 		}
 	}
@@ -71,11 +86,13 @@ public class Student {
 	 * 
 	 * @param n integer the student's essay grade should be set to
 	 */
-	public void setEssayGrade(int n){
+	public void setEssayGrade(int n)
+	{
 		essayGrade = n;
 	}
 	
-	public int getEssayGrade() {
+	public int getEssayGrade() 
+	{
 		return essayGrade;
 	}
 	
@@ -83,11 +100,13 @@ public class Student {
 	 * 
 	 * @param n integer to set finalGrade to
 	 */
-	public void setFinalGrade(int n){
+	public void setFinalGrade(int n)
+	{
 		finalGrade = n;
 	}
 	
-	public int getFinalGrade() {
+	public int getFinalGrade() 
+	{
 		return finalGrade;
 	}
 	
@@ -96,11 +115,13 @@ public class Student {
 	 * @param grade is the grade for the given homework assignment
 	 * @param position controls which homework assignment grade you are changing
 	 */
-	public void setHomeworkGrade(int grade, int position){
+	public void setHomeworkGrade(int grade, int position)
+	{
 		homeworkGrades[position] = grade;
 	}
 	
-	public int getHomeworkGrade(int position) {
+	public int getHomeworkGrade(int position) 
+	{
 		return homeworkGrades[position];
 	}
 	
@@ -108,14 +129,16 @@ public class Student {
 	 * 
 	 * @param n controls output of homework data, get from (homeworkInt - 1) in main.class
 	 */
-	public void getTestValues(int n){
+	public void getTestValues(int n)
+	{
 		System.out.println("String name: " + Name);
 		System.out.println("Integer labGrade: " + labGrade);
 		System.out.println("Boolean examPass: " + examPass);
 		System.out.println("Integer essayGrade: " + essayGrade);
 		System.out.println("Integer finalGrade: " + finalGrade);
 		System.out.print("Homework grades:");
-		while(n >= 0){
+		while(n >= 0)
+		{
 			System.out.print(homeworkGrades[n]);
 			n--;
 		}
